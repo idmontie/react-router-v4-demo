@@ -12,7 +12,7 @@ import {
 // We cannot render a route
 const BasicExample = () => (
   <Router history={browserHistory}>
-    <Route component={Wrapper}>
+    <Route path="/" component={Wrapper}>
       <IndexRoute component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/topics" component={Topics}>
